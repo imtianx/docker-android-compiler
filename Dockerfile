@@ -6,9 +6,9 @@ MAINTAINER imtianx "imtianx@gmail.com"
 # Command line tools only from https://developer.android.com/studio/
 ARG SDK_TOOLS_VERSION=4333796
 
-ARG BUILD_TOOLS_VERSION=27.0.3
-
 ARG COMPILE_SDK_VERSION=27
+
+ARG BUILD_TOOLS_VERSION=27.0.3
 
 # workspace dir
 WORKDIR /workspace_android
@@ -26,9 +26,7 @@ RUN mkdir  sdk && \
     (yes | ./sdk/tools/bin/sdkmanager --no_https "platform-tools") && \
     (yes | ./sdk/tools/bin/sdkmanager --no_https "platforms;android-${COMPILE_SDK_VERSION}") && \
     (yes | ./sdk/tools/bin/sdkmanager --no_https "extras;google;m2repository") && \
-    (yes | ./sdk/tools/bin/sdkmanager --no_https "extras;android;m2repository") && \
-    (yes | ./sdk/tools/bin/sdkmanager --no_https "extras;m2repository;com;android;support;constraint;constraint-layout-solver;1.0.2") && \
-    (yes | ./sdk/tools/bin/sdkmanager --no_https "extras;m2repository;com;android;support;constraint;constraint-layout;1.0.2")
+    (yes | ./sdk/tools/bin/sdkmanager --no_https "extras;android;m2repository")
 
 # -----------------------set android sdk-------------------end-----
 
