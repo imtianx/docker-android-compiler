@@ -40,3 +40,4 @@ RUN apt-get update -y && apt-get install -y bash git openssh-client && \
 
 
 # ref:https://blog.microdog.me/2017/05/10/Build-Android-Project-with-Gitlab-CI/
+
