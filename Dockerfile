@@ -6,9 +6,9 @@ MAINTAINER imtianx "imtianx@gmail.com"
 # Command line tools only from https://developer.android.com/studio/
 ARG SDK_TOOLS_VERSION=4333796
 
-ARG COMPILE_SDK_VERSION=28
+ARG COMPILE_SDK_VERSION=30
 
-ARG BUILD_TOOLS_VERSION=28.0.3
+ARG BUILD_TOOLS_VERSION=30.0.2
 
 # workspace dir
 WORKDIR /workspace_android
