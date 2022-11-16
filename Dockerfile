@@ -4,7 +4,7 @@ MAINTAINER imtianx "imtianx@gmail.com"
 # -----------------------set android sdk-----------------start-----
 
 # Command line tools only from https://developer.android.com/studio/
-ARG SDK_TOOLS_VERSION=9123335
+ARG SDK_TOOLS_VERSION=9123335_latest
 
 ARG COMPILE_SDK_VERSION=30
 
