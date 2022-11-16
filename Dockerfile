@@ -4,11 +4,11 @@ MAINTAINER imtianx "imtianx@gmail.com"
 # -----------------------set android sdk-----------------start-----
 
 # Command line tools only from https://developer.android.com/studio/
-ARG SDK_TOOLS_VERSION=4333796
+ARG SDK_TOOLS_VERSION=9123335
 
-ARG COMPILE_SDK_VERSION=27
+ARG COMPILE_SDK_VERSION=30
 
-ARG BUILD_TOOLS_VERSION=27.0.3
+ARG BUILD_TOOLS_VERSION=30.0.3
 
 # workspace dir
 WORKDIR /workspace_android
