@@ -18,9 +18,9 @@ ENV ANDROID_HOME /workspace_android/sdk
 
 # install android sdk .....start....
 RUN mkdir  sdk && \
-    wget http://dl.google.com/android/repository/sdk-tools-linux-${SDK_TOOLS_VERSION}.zip && \
-    unzip -qd sdk sdk-tools-linux-${SDK_TOOLS_VERSION}.zip && \
-    rm -f sdk-tools-linux-${SDK_TOOLS_VERSION}.zip && \
+    wget http://dl.google.com/android/repository/commandlinetools-linux-${SDK_TOOLS_VERSION}.zip && \
+    unzip -qd sdk commandlinetools-linux-${SDK_TOOLS_VERSION}.zip && \
+    rm -f commandlinetools-linux-${SDK_TOOLS_VERSION}.zip && \
     (yes | ./sdk/tools/bin/sdkmanager --no_https --update) && \
     (yes | ./sdk/tools/bin/sdkmanager --no_https "build-tools;${BUILD_TOOLS_VERSION}") && \
     (yes | ./sdk/tools/bin/sdkmanager --no_https "platform-tools") && \
